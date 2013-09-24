@@ -2,13 +2,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          2.6.1
-Release:          2
+Version:          2.9.1
+Release:          1
 Summary:          A set of annotation maps for KEGG
 Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://bioconductor.org/packages/release/data/annotation/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/data/annotation/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/data/annotation/src/contrib/KEGG.db_2.9.1.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-methods R-AnnotationDbi
@@ -43,3 +43,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/extdata
 %{rlibdir}/%{packname}/help
+
